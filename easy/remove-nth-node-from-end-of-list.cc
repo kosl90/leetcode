@@ -16,7 +16,8 @@ public:
         while (n--) {
             fast = fast->next;
         }
-        for (int i = 0; fast != NULL; ++i) {
+
+        while (fast != NULL) {
             fast = fast->next;
             slow = &(*slow)->next;
         }
